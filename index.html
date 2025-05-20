@@ -148,6 +148,52 @@
       0% { transform: translateY(30px); opacity: 0; }
       100% { transform: translateY(0); opacity: 1; }
     }
+
+    .tokenomics-section {
+  background: linear-gradient(to right, #1b0d3a, #62001a);
+  padding: 4rem 2rem;
+  color: #fff;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.tokenomics-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fdd835;
+}
+
+.tokenomics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.token-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.token-card:hover {
+  transform: translateY(-8px);
+}
+
+.token-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #ffd700;
+}
+
+.token-card p {
+  font-size: 1rem;
+  color: #eee;
+}
+
   </style>
 </head>
 <body>
