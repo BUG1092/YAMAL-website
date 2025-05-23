@@ -420,6 +420,15 @@
   }
 }
 
+    header {
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2); /* inițial transparent */
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* mai închis la scroll */
+}
+
 
 
   </style>
@@ -537,6 +546,26 @@
         section.style.opacity = '1';
       }
     });
+  });
+</script>
+
+    <script>
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 100) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>  <script>
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 100) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
   });
 </script>
 
