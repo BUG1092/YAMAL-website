@@ -433,6 +433,67 @@ header.scrolled {
   background-color: rgba(0, 0, 0, 0.8); /* mai închis la scroll */
 }
 
+    .about-section {
+  background: linear-gradient(to right, #1d1f33, #3c0f2d);
+  color: #fff;
+  padding: 4rem 2rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.about-text strong {
+  color: #ffcc00;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(255, 204, 0, 0.3);
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+
 
 
   </style>
@@ -476,14 +537,25 @@ header.scrolled {
 
   <!-- Restul secțiunilor rămân neschimbate -->
 
-  <section id="about" class="section about-section">
-    <h2>What is YamalCoin?</h2>
-   <p>
-      YamalCoin is a community-driven memecoin inspired by the talent and charisma of Lamine Yamal. Built on the BNB Smart Chain, it unites fans, meme lovers, and crypto enthusiasts. With fair tokenomics and a strong community, YamalCoin is more than just a coin – it's a movement.
-    </p>
-    <p>YamalCoin ($YML) is a meme coin inspired by the rising football star Lamine Yamal, combining the playful spirit of Dogecoin with the passion of Barça fans around the world.
-    </p>
-  </section>
+   
+
+<section id="about" class="section about-section">
+  <h2>About YamalCoin</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        <strong>YamalCoin ($YML)</strong> is more than a meme — it's a movement.
+        Inspired by the brilliance of <strong>Lamine Yamal</strong> and powered by the unstoppable energy of the crypto community,
+        YamalCoin brings the passion of football and the fun of meme culture to the blockchain.
+      </p>
+      <p>
+        Built on <strong>BNB Smart Chain</strong>, YamalCoin offers low fees, high speed, and a vibrant ecosystem fueled by community spirit.
+        Whether you're a die-hard Barça fan or a crypto enthusiast, YamalCoin is your chance to score big.
+      </p>
+    </div>
+  </div>
+</section>
+
 
    <!-- Tokenomics Section -->
 <section id="tokenomics" class="section tokenomics-section">
